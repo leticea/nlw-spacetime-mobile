@@ -9,6 +9,7 @@ import {
 import { BaiJamjuree_700Bold } from "@expo-google-fonts/bai-jamjuree";
 
 import blurBg from "./src/assets/bg-blur.png";
+import Stripes from "./src/assets/stripes.svg";
 
 export default function App() {
   const [hasLoadedFonts] = useFonts({
@@ -25,8 +26,10 @@ export default function App() {
     <ImageBackground
       source={blurBg}
       className="relative flex-1 items-center bg-gray-900"
-      imageStyle={{ position: 'absolute', left: '-100%' }}
+      imageStyle={{ position: "absolute", left: "-100%" }}
     >
+      <Stripes />
+      
       <StatusBar style="light" />
     </ImageBackground>
   );
