@@ -25,6 +25,7 @@ export default function App() {
     <ImageBackground
       source={blurBg}
       className="relative flex-1 items-center bg-gray-900"
+      imageStyle={{ position: 'absolute', left: '-100%' }}
     >
       <StatusBar style="light" />
     </ImageBackground>
