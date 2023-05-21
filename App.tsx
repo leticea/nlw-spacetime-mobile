@@ -1,5 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import { ImageBackground, Text, View } from "react-native";
+import { ImageBackground, Text, TouchableOpacity, View } from "react-native";
 
 import {
   useFonts,
@@ -46,6 +46,10 @@ export default function App() {
             quiser) com o mundo!
           </Text>
         </View>
+
+        <TouchableOpacity activeOpacity={0.7} className="rounded-full bg-green-500 px-5 py-2">
+          <Text className="font-alt text-sm uppercase text-black">Cadastrar lembrança</Text>
+        </TouchableOpacity>
       </View>
 
       <StatusBar style="light" />
