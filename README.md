@@ -7,6 +7,10 @@
 
 <br>
 
+<p align="center">
+  <img alt="" src=".github/wallpaper.png">
+</p>
+
 ## NLW Spacetime
 
 ## 🚀 Tecnologias
@@ -16,9 +20,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Nodejs](https://nodejs.org/en/) - v18.12.1
 - [Npm](https://www.npmjs.com/) - 8.19.2
 - [React Native](https://reactnative.dev/)
+- [NativeWind](https://www.nativewind.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Expo](https://expo.dev/)
-- [NativeWind](https://www.nativewind.dev/)
 
 ## 💻 Projeto
 
