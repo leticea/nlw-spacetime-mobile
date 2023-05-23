@@ -31,7 +31,7 @@ export default function App() {
     BaiJamjuree_700Bold,
   });
 
-  const [request, response, promptAsync] = useAuthRequest(
+  const [request, response, signInWithGithub] = useAuthRequest(
     {
       clientId: "bb415f6ee17a9e2f9e4b",
       scopes: ["identity"],
@@ -43,8 +43,16 @@ export default function App() {
   );
 
   useEffect(() => {
-    if (response?.type === 'success') {
+    // console.log(
+    //   makeRedirectUri({
+    //     scheme: "nlwspacetime",
+    //   })
+    // );
+
+    if (response?.type === "success") {
       const { code } = response.params;
+
+      console.log(code);
     }
   }, [response]);
 
@@ -76,6 +84,7 @@ export default function App() {
         <TouchableOpacity
           activeOpacity={0.7}
           className="rounded-full bg-green-500 px-5 py-2"
+          onPress={() => signInWithGithub()}
         >
           <Text className="font-alt text-sm uppercase text-black">
             Cadastrar lembrança
