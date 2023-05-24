@@ -1,4 +1,11 @@
-import { ScrollView, Switch, Text, TextInput, TouchableOpacity, View } from "react-native";
+import {
+  ScrollView,
+  Switch,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import Icon from "@expo/vector-icons/Feather";
 
 import NLWLogo from "../src/assets/nlw-spacetime-logo.svg";
