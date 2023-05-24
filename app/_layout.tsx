@@ -11,7 +11,7 @@ import {
 } from "@expo-google-fonts/roboto";
 
 import { BaiJamjuree_700Bold } from "@expo-google-fonts/bai-jamjuree";
-import { SplashScreen } from "expo-router";
+import { Slot, SplashScreen, Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 
 const StyledStripes = styled(Stripes);
@@ -30,12 +30,18 @@ export default function Layout() {
   return (
     <ImageBackground
       source={blurBg}
-      className="relative flex-1 items-center bg-gray-900 px-8 py-10"
+      className="relative flex-1 bg-gray-900"
       imageStyle={{ position: "absolute", left: "-100%" }}
     >
       <StyledStripes className="absolute left-2" />
-
       <StatusBar style="light" />
+
+      <Stack
+        screenOptions={{
+          headerShown: false,
+          contentStyle: { backgroundColor: "transparent" },
+        }}
+      />
     </ImageBackground>
   );
 }
