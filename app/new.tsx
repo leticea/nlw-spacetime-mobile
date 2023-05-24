@@ -38,6 +38,15 @@ export default function NewMemory() {
             Tornar memória pública
           </Text>
         </View>
+
+        <TouchableOpacity className="h-32 items-center justify-center rounded-lg border border-dashed border-gray-500 bg-black/20">
+          <View className="flex-row items-center gap-2">
+            <Icon name="image" color="#fff" />
+            <Text className="font-body text-sm text-gray-200">
+              Adicionar foto ou vídeo de capa
+            </Text>
+          </View>
+        </TouchableOpacity>
       </View>
     </View>
   );
