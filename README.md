@@ -11,6 +11,18 @@
   <img alt="" src=".github/wallpaper.png">
 </p>
 
+<p align="center">
+  <img alt="" src=".github/image.jpeg">
+</p>
+
+<p align="center">
+  <img alt="" src=".github/image2.jpeg">
+</p>
+
+<p align="center">
+  <img alt="" src=".github/image3.jpeg">
+</p>
+
 ## NLW Spacetime
 
 ## 🚀 Tecnologias
@@ -23,7 +35,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [NativeWind](https://www.nativewind.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Expo](https://expo.dev/)
-- [Axios](https://axios-http.com/docs/intro)
+- [Axios](https://axios-http.com/docs/intro) - 1.4.0
 - [Day.js](https://day.js.org/)
 
 ## 💻 Projeto
@@ -40,7 +52,7 @@ Evento do NLW na plataforma da [Rocketseat](https://www.rocketseat.com.br/).
 - Clone o projeto.
 - Clone o projeto da API para rodar o projeto junto.
 - Entre na pasta do projeto e rode 'npm install' (use 'yarn install' se for essa a sua configuração).
-- Rodar o comando npm run start para abrir no emulador ou no telefone físico.
+- Rodar o comando npx expo start para abrir no emulador ou no telefone físico.
 - Caso não tenha o expo instalado, seguir o passo a passo da [Rocketseat](https://react-native.rocketseat.dev/).
 
 ## 🤔 Como contribuir
