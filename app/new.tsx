@@ -14,6 +14,8 @@ import { Link } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useState } from "react";
 import * as ImagePicker from "expo-image-picker";
+import * as SecureStore from "expo-secure-store";
+import { api } from "../src/lib/api";
 
 export default function NewMemory() {
   const { bottom, top } = useSafeAreaInsets();
@@ -37,8 +39,26 @@ export default function NewMemory() {
     }
   }
 
-  function handleCreateMemory() {
-    console.log(content, isPublic);
+  async function handleCreateMemory() {
+    const token = await SecureStore.getItemAsync("token");
+
+    let coverUrl = "";
+
+    if (preview) {
+      const uploadFormData = new FormData();
+
+      uploadFormData.append("file", {
+        uri: preview,
+        name: "image.jpg",
+        type: "image/jpeg",
+      } as any);
+
+      const uploadResponse = await api.post("/upload", uploadFormData);
+
+      coverUrl = uploadResponse.data.fileUrl;
+
+      console.log(coverUrl);
+    }
   }
 
   return (
