@@ -53,7 +53,11 @@ export default function NewMemory() {
         type: "image/jpeg",
       } as any);
 
-      const uploadResponse = await api.post("/upload", uploadFormData);
+      const uploadResponse = await api.post("/upload", uploadFormData, {
+        headers: {
+          "Content-Type": "multipart/form-data", // isso é especificamente para o Android
+        },
+      });
 
       coverUrl = uploadResponse.data.fileUrl;
 
