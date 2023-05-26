@@ -12,15 +12,15 @@
 </p>
 
 <p align="center">
-  <img height="292" width="592" alt="" src=".github/image.png">
+  <img height="492" width="592" alt="" src=".github/image.png">
 </p>
 
 <p align="center">
-  <img height="292" width="592" alt="" src=".github/image2.png">
+  <img height="492" width="592" alt="" src=".github/image2.png">
 </p>
 
 <p align="center">
-  <img height="292" width="592" alt="" src=".github/image3.png">
+  <img height="492" width="592" alt="" src=".github/image3.png">
 </p>
 
 ## NLW Spacetime
