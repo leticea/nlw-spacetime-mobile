@@ -23,6 +23,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [NativeWind](https://www.nativewind.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Expo](https://expo.dev/)
+- [Day.js](https://www.npmjs.com/package/dayjs)
 
 ## 💻 Projeto
 
