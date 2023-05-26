@@ -7,23 +7,11 @@
 
 <br>
 
+## NLW Spacetime
+
 <p align="center">
   <img alt="" src=".github/wallpaper.png">
 </p>
-
-<p align="center">
-  <img height="900" width="450" alt="" src=".github/image.jpeg">
-</p>
-
-<p align="center">
-  <img height="900" width="450" alt="" src=".github/image2.jpeg">
-</p>
-
-<p align="center">
-  <img height="900" width="450" alt="" src=".github/image3.jpeg">
-</p>
-
-## NLW Spacetime
 
 ## 🚀 Tecnologias
 
@@ -46,6 +34,18 @@ Evento do NLW na plataforma da [Rocketseat](https://www.rocketseat.com.br/).
 
 - [Back-end - API](https://github.com/leticea/nlw-spacetime-server)
 - [Front-end Reactjs - Web](https://github.com/leticea/nlw-spacetime-web)
+
+<p align="center">
+  <img height="900" width="450" alt="" src=".github/image.jpeg">
+</p>
+
+<p align="center">
+  <img height="900" width="450" alt="" src=".github/image2.jpeg">
+</p>
+
+<p align="center">
+  <img height="900" width="450" alt="" src=".github/image3.jpeg">
+</p>
 
 ## 🚀 Como Rodar
 
