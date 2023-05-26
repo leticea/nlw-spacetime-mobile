@@ -5,6 +5,8 @@ import * as SecureStore from "expo-secure-store";
 import NLWLogo from "../src/assets/nlw-spacetime-logo.svg";
 import { Link, useRouter } from "expo-router";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { useEffect } from "react";
+import { api } from "../src/lib/api";
 
 export default function NewMemory() {
   const { bottom, top } = useSafeAreaInsets();
@@ -15,6 +17,22 @@ export default function NewMemory() {
 
     router.push("/");
   }
+
+  async function loadMemories() {
+    const token = await SecureStore.getItemAsync("token");
+
+    const response = await api.get("/memories", {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
+
+    console.log(response.data);
+  }
+
+  useEffect(() => {
+    loadMemories();
+  }, []);
 
   return (
     <ScrollView
