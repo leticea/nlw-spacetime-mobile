@@ -1,4 +1,5 @@
 import {
+  Image,
   ScrollView,
   Switch,
   Text,
@@ -17,20 +18,23 @@ import * as ImagePicker from "expo-image-picker";
 export default function NewMemory() {
   const { bottom, top } = useSafeAreaInsets();
 
+  const [preview, setPreview] = useState<string | null>(null);
   const [content, setContent] = useState("");
   const [isPublic, setIsPublic] = useState(false);
 
   async function openImagePicker() {
-    let result = await ImagePicker.launchImageLibraryAsync({
-      mediaTypes: ImagePicker.MediaTypeOptions.Images,
-      quality: 1,
-    });
+    try {
+      const result = await ImagePicker.launchImageLibraryAsync({
+        mediaTypes: ImagePicker.MediaTypeOptions.Images,
+        quality: 1,
+      });
 
-    console.log(result);
-
-    // if (!result.canceled) {
-    //   setImage(result.assets[0].uri);
-    // }
+      if (result.assets[0]) {
+        setPreview(result.assets[0].uri);
+      }
+    } catch (err) {
+      // deu erro mas eu não tratei
+    }
   }
 
   function handleCreateMemory() {
@@ -70,12 +74,19 @@ export default function NewMemory() {
           onPress={openImagePicker}
           className="h-32 items-center justify-center rounded-lg border border-dashed border-gray-500 bg-black/20"
         >
-          <View className="flex-row items-center gap-2">
-            <Icon name="image" color="#fff" />
-            <Text className="font-body text-sm text-gray-200">
-              Adicionar foto ou vídeo de capa
-            </Text>
-          </View>
+          {preview ? (
+            <Image
+              source={{ uri: preview }}
+              className="h-full w-full rounded-lg object-cover"
+            />
+          ) : (
+            <View className="flex-row items-center gap-2">
+              <Icon name="image" color="#fff" />
+              <Text className="font-body text-sm text-gray-200">
+                Adicionar foto ou vídeo de capa
+              </Text>
+            </View>
+          )}
         </TouchableOpacity>
 
         <TextInput
