@@ -36,7 +36,7 @@ Evento do NLW na plataforma da [Rocketseat](https://www.rocketseat.com.br/).
 - [Front-end Reactjs - Web](https://github.com/leticea/nlw-spacetime-web)
 
 <p align="center">
-  <img alt="" src=".github/image.jpeg">
+  <img alt="" src=".github/image.png">
 </p>
 
 ## 🚀 Como Rodar
