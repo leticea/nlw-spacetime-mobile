@@ -21,10 +21,12 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Npm](https://www.npmjs.com/) - 8.19.2
 - [React Native](https://reactnative.dev/)
 - [NativeWind](https://www.nativewind.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
+- [TypeScript](https://www.typescriptlang.org/) - 4.9.4
+- [Tailwindcss](https://tailwindcss.com/) - 3.3.2
 - [Expo](https://expo.dev/)
 - [Axios](https://axios-http.com/docs/intro) - 1.4.0
 - [Day.js](https://day.js.org/)
+- [Vector Icons](https://docs.expo.dev/guides/icons/) - ^13.0.0
 
 ## 💻 Projeto
 
