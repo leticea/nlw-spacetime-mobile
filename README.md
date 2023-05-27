@@ -36,7 +36,7 @@ Projeto desenvolvido com React Native para a criação de uma cápsula do tempo.
 Evento do NLW na plataforma da [Rocketseat](https://www.rocketseat.com.br/).
 
 - [Back-end - API](https://github.com/leticea/nlw-spacetime-server)
-- [Front-end Reactjs - Web](https://github.com/leticea/nlw-spacetime-web)
+- [Front-end - Web](https://github.com/leticea/nlw-spacetime-web)
 
 <p align="center">
   <img height="900" width="450" alt="" src=".github/image.jpeg">
